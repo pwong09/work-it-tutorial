@@ -13,12 +13,12 @@ class GiphyService
 
   def get_search(input)
     @connection.query["q"] = input
-    @connection.query["api_key"] = "dc6zaTOxFJmzC"
+    @connection.query["api_key"] = ENV['GIPHY_API_KEY']
     @connection.get("search")
   end
 
   def random
-    @connection.query["api_key"] = "dc6zaTOxFJmzC"
+    @connection.query["api_key"] = ENV['GIPHY_API_KEY']
     @connection.get("random")
   end
 
