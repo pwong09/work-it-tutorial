@@ -57,3 +57,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # shim to load environment variables from .env 
 gem 'dotenv-rails', groups: [:development, :test]
+
+gem 'sinatra'
+
+gem 'sidekiq'
